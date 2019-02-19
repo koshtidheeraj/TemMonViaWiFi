@@ -1,15 +1,8 @@
-// var http = require('http');
-
-// http.createServer(function (req, res) {
-//   res.writeHead(200, {'Content-Type': 'text/html'});
-//   res.end('Hello World!');
-// }).listen(8080);
-
 var http = require('http'),
     url = require('url'),
     mongo = require('mongodb');
 var mongoclient = mongo.MongoClient;
-var mongourl = "mongodb://localhost:27017/";
+var mongourl = "mongodb://mongo:27017";
 var temp_db;
 mongoclient.connect(mongourl, function(err, db){
     if(err) throw err;

@@ -1,0 +1,13 @@
+{
+    "name": "TemMonitorNodeServer",
+    "version": "1.0.0",
+    "description": "Docker implementation of Tem. Monitor node server",
+    "author": "Dheeraj Koshti <dheeraj.koshti@synerzip.com>",
+    "main": "NodeServer.js",
+    "scripts": {
+        "start": "node NodeServer.js"
+    },
+    "dependencies": {
+        "mongodb": "*"
+    }
+}
